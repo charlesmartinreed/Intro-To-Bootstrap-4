@@ -13,40 +13,23 @@
     <title>Utilities</title>
   </head>
   <body>
-		<div class="container">
-			<h1 class="display-1 text-center border border-primary border-top-0 border-bottom-0">Utilities</h1>
-			<h5 class="border border-danger rounded-top">GIMME A BORDER!</h5>
-			<h5 class="border border-warning border-top-0">GIMME A BORDER!</h5>
-			<h5 class="border border-info border-top">GIMME A BORDER!</h5>
+		<div class="container text-center">
+			<h1 class="text-center display-3">Breakpoints</h1>
+			<!-- padding of 5 on xl screens and above -->
+			<!-- <button class="btn btn-warning p-xl-5">BUTTON</button> -->
+			<button class="btn btn-warning p-sm-5 p-md-0 p-lg-5 p-xl-0">BUTTON</button>
+			<!-- begin at padding 0, increment at each breakpoint until xl -->
+			<button class="btn btn-danger p-0 p-sm-2 p-md-3 p-lg-4 pd-xl-5">BUTTON</button>
 
-			<!-- PADDING -->
-			<!-- p-0 means remove all padding -->
-			<!-- note that the numbers are different levels based off of REMS -->
-			<!-- P5 is set to 3rems, for example -->
-			<!-- px and py are padding in right/left and top/bottom by specified amount -->
-			<button class="btn btn-info p-0">P0</button>
-			<button class="btn btn-info p-1">P1</button>
-			<button class="btn btn-info p-2">P2</button>
-			<button class="btn btn-info p-3">P3</button>
-			<button class="btn btn-info p-4">P4</button>
-			<button class="btn btn-info p-5">P5</button>
+			<!-- incrementally add padding to each side, clockwise, at the screen breakpoints -->
+			<button class="btn btn-success p-0 pl-sm-5 pt-md-5 pr-lg-5 pb-xl-5">BUTTON</button>
 
-			<button class="btn btn-info pt-5">Pt-5</button>
-			<button class="btn btn-info pb-5">Pb-5</button>
-			<button class="btn btn-info py-5">Py-5</button>
+			<h1>Margin Example</h1>
+			<button class="btn btn-primary p-4 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">H1</button>
+			<button class="btn btn-primary p-4 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">H1</button>
+			<button class="btn btn-primary p-4 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">H1</button>
+			<button class="btn btn-primary p-4 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">H1</button>
 
-			<button class="btn btn-info pl-5">Pl-5</button>
-			<button class="btn btn-info pr-5">Pr-5</button>
-			<button class="btn btn-info px-5">Px-5</button>
-
-			<!-- MARGINS -->
-			<!-- LIKE padding, this uses rem -->
-			<p class="bg-success text-white m-0">THIS IS M-0</p>
-			<p class="bg-success text-white m-1">THIS IS M-1</p>
-			<p class="bg-success text-white m-2">THIS IS M-2</p>
-			<p class="bg-success text-white m-3">THIS IS M-3</p>
-			<p class="bg-success text-white m-4">THIS IS M-4</p>
-			<p class="bg-success text-white m-5">THIS IS M-5</p>
 		</div>
 
 
