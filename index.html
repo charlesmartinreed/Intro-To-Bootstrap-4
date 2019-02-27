@@ -6,32 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="style/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <title>Typography</title>
+
+    <title>Utilities</title>
   </head>
   <body>
 		<div class="container">
-			<h1>Regular H1</h1>
-			<h1 class="display-1 text-info">Display 1</h1>
-			<h1 class="display-2">Display 2</h1>
-			<h1 class="display-3">Display 3</h1>
-			<h1 class="display-4">Display 4</h1>
+			<h1 class="display-1 text-center border border-primary border-top-0 border-bottom-0">Utilities</h1>
+			<h5 class="border border-danger rounded-top">GIMME A BORDER!</h5>
+			<h5 class="border border-warning border-top-0">GIMME A BORDER!</h5>
+			<h5 class="border border-info border-top">GIMME A BORDER!</h5>
 
-			<blockquote class="blockquote">
-				<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, provident!</p>
-				<footer class="blockquote-footer">Some Guy <cite title="A man of few words">A man of few words</cite></footer>
-			</blockquote>
+			<!-- PADDING -->
+			<!-- p-0 means remove all padding -->
+			<!-- note that the numbers are different levels based off of REMS -->
+			<!-- P5 is set to 3rems, for example -->
+			<!-- px and py are padding in right/left and top/bottom by specified amount -->
+			<button class="btn btn-info p-0">P0</button>
+			<button class="btn btn-info p-1">P1</button>
+			<button class="btn btn-info p-2">P2</button>
+			<button class="btn btn-info p-3">P3</button>
+			<button class="btn btn-info p-4">P4</button>
+			<button class="btn btn-info p-5">P5</button>
 
-			<blockquote>
-				<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, provident!</p>
-			</blockquote>
+			<button class="btn btn-info pt-5">Pt-5</button>
+			<button class="btn btn-info pb-5">Pb-5</button>
+			<button class="btn btn-info py-5">Py-5</button>
 
-			<blockquote class="blockquote text-right">
-				<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, provident!</p>
-				<footer class="blockquote-footer">Some Guy <cite title="A man of few words">A man of few words</cite></footer>
-			</blockquote>
+			<button class="btn btn-info pl-5">Pl-5</button>
+			<button class="btn btn-info pr-5">Pr-5</button>
+			<button class="btn btn-info px-5">Px-5</button>
 
+			<!-- MARGINS -->
+			<!-- LIKE padding, this uses rem -->
+			<p class="bg-success text-white m-0">THIS IS M-0</p>
+			<p class="bg-success text-white m-1">THIS IS M-1</p>
+			<p class="bg-success text-white m-2">THIS IS M-2</p>
+			<p class="bg-success text-white m-3">THIS IS M-3</p>
+			<p class="bg-success text-white m-4">THIS IS M-4</p>
+			<p class="bg-success text-white m-5">THIS IS M-5</p>
 		</div>
 
 
