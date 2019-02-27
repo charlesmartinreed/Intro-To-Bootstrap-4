@@ -14,22 +14,15 @@
   </head>
   <body>
 		<div class="container">
-			<!-- 'd' utility class allows us to change display style for elements -->
-			<!-- .d-{breakpoint}-{display style value} -->
-			<h1 class="display-4 text-center">Display Utility</h1>
-			<h1 class="border border-danger d-inline">Hello world!</h1>
-			<h1 class="border border-success d-block">Hello world!</h1>
-			<h1 class="border border-info d-xl-none">HIDE AT XL</h1>
-			<h1 class="border border-info d-none d-lg-block d-xl-none">HIDE UNTIL LG</h1>
-		</div>
-
-		<div class="container">
-			<div class="jumbotron">
-			  <h1 class="display-4">Hello, world!</h1>
-			  <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a in tempore accusamus, ducimus reprehenderit perspiciatis nobis ut voluptatibus enim veniam consectetur velit error amet nemo consequuntur, id dolor tempora magni alias quia, ipsa ex ipsum commodi neque? Magni labore eveniet, excepturi ipsum a. Placeat dolores, sint voluptatum ea beatae, nesciunt obcaecati, nostrum necessitatibus sequi consectetur corrupti at quasi voluptas.</p>
-			  <hr class="my-4">
-			  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+			<h1 class="text-center display-4">Flexbox</h1>
+			<!-- justify-content-between spaces equally between items on main axis(x)-->
+			<!-- justify-content-around spaces equally between items AND around items on the main axis(x) -->
+			<!-- align-items does the same for the cross axis, Y -->
+			<div class="border border-dark d-flex justify-content-center align-items-center" style="height: 200px">
+				<!--  -->
+				<button class="btn btn-info btn-lg">LARGE</button>
+				<button class="btn btn-primary">SMALL</button>
+				<button class="btn btn-warning">SMALL</button>
 			</div>
 		</div>
 
