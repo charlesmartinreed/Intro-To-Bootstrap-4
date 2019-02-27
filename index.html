@@ -18,11 +18,43 @@
 			<!-- justify-content-between spaces equally between items on main axis(x)-->
 			<!-- justify-content-around spaces equally between items AND around items on the main axis(x) -->
 			<!-- align-items does the same for the cross axis, Y -->
-			<div class="border border-dark d-flex justify-content-center align-items-center" style="height: 200px">
-				<!--  -->
+			<div class="border border-dark d-flex justify-content-start align-items-end" style="height: 200px">
 				<button class="btn btn-info btn-lg">LARGE</button>
 				<button class="btn btn-primary">SMALL</button>
 				<button class="btn btn-warning">SMALL</button>
+			</div>
+
+			<!-- set flex direction to reverse row -->
+			<div class="border border-dark d-flex flex-row-reverse justify-content-start align-items-end" style="height: 200px">
+				<button class="btn btn-info btn-lg">LARGE</button>
+				<button class="btn btn-primary">SMALL</button>
+				<button class="btn btn-warning">SMALL</button>
+			</div>
+
+			<!-- set flex direction to column -->
+			<!-- top to bottom becomes main axis, left to right becomes cross axis -->
+			<!-- justify content now refers to top/bottom, align items now refers to left/right -->
+			<div class="border border-dark d-flex flex-column justify-content-around align-items-start" style="height: 200px">
+				<button class="btn btn-info btn-lg">LARGE</button>
+				<button class="btn btn-primary">SMALL</button>
+				<button class="btn btn-warning">SMALL</button>
+			</div>
+
+			<div class="border border-dark d-flex flex-column-reverse justify-content-start align-items-start" style="height: 200px">
+				<button class="btn btn-info btn-lg">LARGE</button>
+				<button class="btn btn-primary">SMALL</button>
+				<button class="btn btn-warning">SMALL</button>
+			</div>
+
+			<!-- setting up flex with breakpoints - flex-{breakpoint}-{flex layout value} -->
+			<h1 class="display-4 text-center">EXAMPLE TIME</h1>
+			<div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
+				<button class="btn btn-dark btn-lg">Link 1</button>
+				<button class="btn btn-dark btn-lg">Link 2</button>
+				<button class="btn btn-dark btn-lg">Link 3</button>
+				<button class="btn btn-dark btn-lg">Link 4</button>
+				<button class="btn btn-dark btn-lg">Link 5</button>
+				<button class="btn btn-dark btn-lg">Link 6</button>
 			</div>
 		</div>
 
