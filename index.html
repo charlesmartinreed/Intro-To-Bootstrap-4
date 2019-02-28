@@ -13,37 +13,19 @@
     <title>Navs+Flex</title>
   </head>
   <body>
-			<div class="container">
-				<!-- notice you don't have to add d-flex here since flexible is already enabled on navbar in Boostrap 4 -->
-					<h1 class="display-4 text-center">Navs+Flex</h1>
-					<ul class="nav border border-primary justify-content-around">
-					  <li class="nav-item">
-					    <a class="nav-link active" href="#">Active</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="#">Link</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="#">Link</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link disabled" href="#">Disabled</a>
-			  		</li>
-			</ul>
-
-			<nav class="nav nav-tabs mt-5">
-			  <a class="nav-link" href="#">Active</a>
-			  <a class="nav-link active" href="#">Link</a>
-			  <a class="nav-link disabled" href="#">Link</a>
-			  <a class="nav-link disabled" href="#">Disabled</a>
-			</nav>
-
-			<nav class="nav flex-column flex-sm-row justify-content-center align-items-center">
-			  <a class="nav-link active" href="#">Active</a>
-			  <a class="nav-link" href="#">Link</a>
-			  <a class="nav-link disabled" href="#">Link</a>
-			  <a class="nav-link disabled" href="#">Disabled</a>
-			</nav>
+		<div class="container">
+			<h1 class="display-4 text-center">The Grid</h1>
+			<!-- making a grid -->
+			<div class="row border border-danger">
+				<!-- xs small they stack, sm they take up 50/50-->
+				<h3 class="col-sm-6 col-xl-3 bg-info m-0">#1</h3>
+				<h3 class="col-sm-6 col-xl-9 bg-warning m-0">#2</h3>
+			</div>
+			<div class="row">
+				<div class="col bg-primary">THING</div>
+				<div class="col-6 bg-info">THING</div>
+				<div class="col bg-success">THING</div>
+			</div>
 		</div>
 
     <!-- Optional JavaScript -->
